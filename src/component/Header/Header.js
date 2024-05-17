@@ -38,9 +38,9 @@ function Header(props) {
                         <div className='mobileMenu'>
                             <IoMdMenu className="" size={25} onClick={() => props.setOpen(prevOpen => !prevOpen)} />
                         </div>
-                        <div className='headHeading'>
+                        {/* <div className='headHeading'>
                             <h3> {pathname}</h3>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-6 col-10 d-flex justify-content-end align-items-center gap-3">
 

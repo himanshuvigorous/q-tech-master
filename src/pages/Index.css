@@ -6,7 +6,7 @@
 .tableHeadC h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #1267c3;
+    color: #f1f1f1;
     margin-left: 10px;
     margin-bottom: 0rem;
 }
@@ -54,7 +54,7 @@
     background-color: #fff;
     padding: 10px;
     height: 100vh;
-    width: 320px;
+    width: 500px;
     position: absolute;
     right: 0;
     padding: 20px 15px;
@@ -147,3 +147,12 @@
     color: #1640d6;
     cursor: pointer;
 }
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; 
+}
+

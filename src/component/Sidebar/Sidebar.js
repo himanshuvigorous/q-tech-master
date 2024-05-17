@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from '../../Redux/actions/authActions';
 import { MdCasino } from "react-icons/md";
+import Logo from '../Logo/Logo';
 
 function Sidebar(props) {
   const auth = useSelector((state) => state.auth.user);
@@ -31,6 +32,8 @@ function Sidebar(props) {
     localStorage.clear()
     navigate("/")
   };
+  const userType = JSON.parse(localStorage.getItem("user")).data.userType
+
   return (
     <>
       <section className={`sideWidth ${props.open ? 'block' : 'hidden'}`}>
@@ -41,7 +44,8 @@ function Sidebar(props) {
               <IoMdClose className="" size={25} onClick={() => props.setOpen(false)} />
             </div>
             <div className='logo mb-3'>
-              <img src={logo} height="55" width="150" />
+              {/* <img src={logo} height="55" width="150" /> */}
+              <Logo width='100px' height="100px" />
             </div>
             <div className='acOpen'>
               <span>{auth?.user?.userType}</span>
@@ -55,18 +59,19 @@ function Sidebar(props) {
                     Dashboard
                   </Link>
                 </li>
-                <li>
+            
+                 {userType==="superadmin" && <li>
                   <Link to='/app/company' className='menuBtn'>
                     <AiOutlineBank className='menuIcon' />
                     Company List
                   </Link>
-                </li>
-                <li>
+                </li>}
+                {userType==="superadmin" && <li>
                   <Link to='/app/pm' className='menuBtn'>
                     <MdCasino className='menuIcon' />
                     Casino List
                   </Link>
-                </li>
+                </li>}
                 <li>
                   <Link to='/app/tl' className='menuBtn'>
                     <LuUser2 className='menuIcon' />

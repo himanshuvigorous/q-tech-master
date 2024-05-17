@@ -15,8 +15,6 @@ import { fetchUsers } from '../Redux/actions/usersActions';
 import UpdateUserModal from '../component/Modale/UpdateUserModal';
 import { Link, useNavigate } from 'react-router-dom';
 import { httpGet, httpPost } from '../Helper/Helper';
-import { FaLink, FaVideo } from 'react-icons/fa';
-import { TiVideo } from 'react-icons/ti';
 import ShowFullDataModal2 from '../component/Modale/ShowFullDataModale2';
 
 function Company() {
@@ -105,21 +103,23 @@ console.log(resData);
 
   return (
     <>
-      <CreateCompanyModale isModalOpen={isModalOpen} closeModal={closeModal} userType={"company"} />
+      {/* <CreateCompanyModale isModalOpen={isModalOpen} closeModal={closeModal} userType={"company"} />
 
-      <UpdateUserModal isEditModalOpen={isEditModalOpen} closeModal={closeModal} userToEdit={userEditData} />
+      <UpdateUserModal isEditModalOpen={isEditModalOpen} closeModal={closeModal} userToEdit={userEditData} /> */}
+
       <ShowFullDataModal2 isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} />
       {/* <ShowFullDataModale isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} /> */}
+      {loading && <Loading />}
 
       <div className='allPageMainView'>
         <div className='container-fluid'>
           <div className='tableDataView'>
             <div className='row'>
               <div className='col-lg-12 col-sm-12'>
-                <div className='tableMainBoxView tableDataHeight'>
+                <div className='tableMainBoxView tableDataHeight '  style={{  backgroundColor: "rgb(25, 47, 59)" }}>
                   <div className='filterView'>
                     <div className='tableHeadC'>
-                      <Link to='/app/dashboard'> <MdArrowBack /></Link>
+                      <Link to='/app/dashboard' style={{color:"white" }}> <MdArrowBack /></Link>
                       {/* <MdArrowBack /> */}
                       <h3>Casino List</h3>
                     </div>
@@ -148,9 +148,7 @@ console.log(resData);
                           {/* <th className='text-center' scope="col"></th> */}
                         </tr>
                       </thead>
-                      {loading && loading ? (
-                        <Loading />
-                      ) :
+                      {!loading && 
                         <tbody>
                           {console.log("resData",resData)}
                           {resData && resData?.data.length > 0 ? (

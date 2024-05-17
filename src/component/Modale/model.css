@@ -67,3 +67,102 @@
     background-color: rgb(25, 47, 59);
     color: white;
 }
+
+.pop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(131, 131, 131, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.popMain{
+    width: 600px;
+}
+.popHeader{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    background-color: rgb(25, 47, 59);
+    color: white;
+    padding-left: 15px;
+    padding-block: 8px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.popContainer{
+    background-color: rgb(245, 245, 245);
+    border: 5px solid    rgb(25, 47, 59);
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+    padding-left: 30px;
+    padding-block: 10px;
+    word-break: break-all;
+    overflow-x: hidden;
+    padding-right: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+}
+.popContainer::-webkit-scrollbar {
+    width: 0;
+}
+.popCreateContainer{
+    background-color: rgb(245, 245, 245);
+    font-family: "Roboto", sans-serif;
+    border: 5px solid    rgb(25, 47, 59);
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+    padding-left: 5px;
+    padding-block: 10px;
+    word-break: break-all;
+    overflow-x: hidden;
+    padding-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.popCreateContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+/* .popMainvid{
+    width: 900px;
+} */
+.popHeadervid{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    background-color: rgb(25, 47, 59);
+    color: white;
+    padding-left: 8px;
+    padding-block: 8px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.popContainervid{
+    background-color: rgb(245, 245, 245);
+    border: 5px solid    rgb(25, 47, 59);
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    overflow: scroll;
+    padding-inline: 10px;
+    padding-block: 10px;
+    word-break: break-all;
+    overflow-x: hidden;
+    padding-right: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+}
+.popContainervid::-webkit-scrollbar {
+    width: 0;
+}

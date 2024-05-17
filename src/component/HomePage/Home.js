@@ -8,6 +8,7 @@ import { LuUser2 } from "react-icons/lu";
 import { MdOutlineLockOpen } from "react-icons/md";
 import { toast } from "react-toastify";
 import { loginUser } from "../../Redux/actions/authActions";
+import Logo from "../Logo/Logo";
 
 
 const Home = () => {
@@ -100,7 +101,8 @@ const Home = () => {
             <section className="homeMainView">
                 <div className="leftSection">
                     <div className="dataView">
-                        <img src={logo} alt="IDURAR ERP CRM" height="70" width="220" />
+                        {/* <img src={logo} alt="IDURAR ERP CRM" height="70" width="220" /> */}
+                        <Logo width='100px' height="100px" />
                         <div className="homeHead">
                             <h3>Manage Your Company With :</h3>
                         </div>
@@ -123,7 +125,8 @@ const Home = () => {
                 <div className="rightSection">
                     <div className="dataView">
                         <div className="logoImg">
-                            <img src={logo} alt="IDURAR ERP CRM" height="70" width="220" />
+                            {/* <img src={logo} alt="IDURAR ERP CRM" height="70" width="220" /> */}
+                            <Logo width='200px' height="200px" />
                         </div>
                         <h1 className="font-weight-bold text-center mb-4">Login</h1>
                         <form onSubmit={handleOnSubmit} >

@@ -392,7 +392,7 @@ const Dashboard = (props) => {
             </div>
           </div>
         </div>
-        <div className='tableDataView'>
+        {/* <div className='tableDataView'>
           <div className='row'>
             <div className='col-lg-6 col-sm-12'>
               <div className='tableMainBoxView'>
@@ -471,7 +471,7 @@ const Dashboard = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

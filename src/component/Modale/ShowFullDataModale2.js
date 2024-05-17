@@ -41,32 +41,24 @@ function ShowFullDataModal2({ isShowUserDataModale, closeModal, userData, itemty
     return (
         <>
             {isShowUserDataModale && (
-                <div className="modal fade show" tabIndex="-1" style={modalStyle}>
-                    <div className="m-5" role="document">
-                        <div className="modal-content" ref={modalRef}>
-                            <div className="modal-header">
-                                <MdArrowBack onClick={() => closeModal()} size={20} />
-                                <h5 className="modal-title">Data Details</h5>
-                            </div>
-                            <div className="modal-body h-500">
-                                <div className="container">
-                                    <div className='allPageMainView'>
-                                        <div>
-                                            <iframe
-                                                title="Video Player"
-                                                width="560"
-                                                height="315"
-                                                src={userData}
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowFullScreen
-                                            ></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div className='pop'>
+                  <div className='popMainvid'  ref={modalRef} >
+                    <div className='popHeadervid'>
+                    <MdArrowBack onClick={() => closeModal()} size={20} />
+                   <h5 className="">Video</h5>
                     </div>
-                </div>
+                    <div className='popContainervid'>
+                                                      <iframe
+                                                          title="Video Player"
+                                                          width="800"
+                                                          height="500"
+                                                          src={userData}
+                                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                          allowFullScreen
+                                                      ></iframe>
+                    </div>
+                  </div>
+              </div>
             )}
         </>
     );
