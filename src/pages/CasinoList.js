@@ -15,7 +15,8 @@ import { fetchUsers } from '../Redux/actions/usersActions';
 import UpdateUserModal from '../component/Modale/UpdateUserModal';
 import { Link, useNavigate } from 'react-router-dom';
 import { httpGet, httpPost } from '../Helper/Helper';
-import ShowFullDataModal2 from '../component/Modale/ShowFullDataModale2';
+
+import ShowCasinoVideoModale from '../component/Modale/ShowCasinoVideoModale';
 
 function CasinoList() {
   // const usersData = useSelector((state) => state.users.users);
@@ -103,7 +104,7 @@ console.log(resData);
 
   return (
     <>
-      <ShowFullDataModal2 isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} />
+      <ShowCasinoVideoModale isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} />
 
       {loading && <Loading />}
 

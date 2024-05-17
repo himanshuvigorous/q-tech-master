@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MdArrowBack } from 'react-icons/md';
 
-function ShowFullDataModal2({ isShowUserDataModale, closeModal, userData, itemtype }) {
+function ShowCasinoVideoModale({ isShowUserDataModale, closeModal, userData, itemtype }) {
     const modalRef = useRef(null);
 
     const handleOutsideClick = (e) => {
@@ -64,7 +64,7 @@ function ShowFullDataModal2({ isShowUserDataModale, closeModal, userData, itemty
     );
 }
 
-export default ShowFullDataModal2;
+export default ShowCasinoVideoModale;
 
 // import React, { useState, useEffect } from 'react';
 // import { MdArrowBack } from 'react-icons/md';
