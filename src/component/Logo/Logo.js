@@ -12,9 +12,9 @@ const Logo = ({ width, height }) => {
                 style={{ width: width, height: height, cursor: 'pointer', backgroundColor:"rgb(25, 47, 59)"  }} 
                
             >
-                <h3 className="text-white m-0">Q</h3>
+                <h3 style={{ fontSize: width }}  className="text-white m-0">Q</h3>
             </div>
-            <h3 className="ml-2 mb-0">tech</h3>
+            <h3 style={{ color: "rgb(25, 47, 59)" }}  className="ml-2 mb-0">Tech</h3>
         </div>
     );
 };

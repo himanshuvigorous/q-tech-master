@@ -4,6 +4,8 @@ import moment from 'moment';
 import { MdArrowBack } from 'react-icons/md';
 
 function ShowFullDataModal({ isShowUserDataModale, closeModal, userData }) {
+
+
     const modalRef = useRef(null);
 
     const handleOutsideClick = (e) => {
@@ -11,6 +13,15 @@ function ShowFullDataModal({ isShowUserDataModale, closeModal, userData }) {
             closeModal();
         }
     };
+    useEffect(() => {
+        // Add event listener when component mounts
+        document.addEventListener('mousedown', handleOutsideClick);
+
+        // Remove event listener when component unmounts
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, []);
 
     const [modalStyle, setModalStyle] = useState({
         display: 'block',
@@ -29,7 +40,7 @@ function ShowFullDataModal({ isShowUserDataModale, closeModal, userData }) {
             setModalStyle({ ...modalStyle, display: 'flex' });
         }
     }, [isShowUserDataModale]);
-    console.log("userData",userData);
+
     const [formattedData, setFormattedData] = useState([]);
 
     useEffect(() => {
@@ -40,7 +51,7 @@ function ShowFullDataModal({ isShowUserDataModale, closeModal, userData }) {
     const convertData = (userData) => {
         const formattedData = [];
         for (const key in userData) {
-            if (userData.hasOwnProperty(key) && key !== 'Admin'&& key !== '_id' && key !== 'Pm' && key !== 'Company' && key !== 'CreatedById' && key !== 'CompanyId' && key !== 'password' && key !== 'createdAt' && key !== '__v') {
+            if (userData.hasOwnProperty(key)) {
                 const value = userData[key];
                 if (Array.isArray(value)) {
                     formattedData.push({ key, value: value.join(', ') });
@@ -63,18 +74,8 @@ function ShowFullDataModal({ isShowUserDataModale, closeModal, userData }) {
         }
         return nestedData;
     };
+   
 
- useEffect(() => {
-        // Add event listener when component mounts
-        document.addEventListener('mousedown', handleOutsideClick);
-
-        // Remove event listener when component unmounts
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
-    }, []);
-
-console.log(formattedData);
     return (
         <>
 
@@ -88,10 +89,20 @@ console.log(formattedData);
                       <div className='popContainer'>
                       {formattedData.map((item, index) => (
                                         <div className="row mb-2" key={index}>
+                                           
                                             <div className="col-5">
                                                 <strong>{item.key.charAt(0).toUpperCase() + item.key.slice(1)}:</strong>
                                             </div>
-                                        <div className='col-7'> {item.value.length === 0 ? "data not available" : item.value !== true || false ? item.value : item.value === false? "active": " inactive" }</div>
+                                            <div className='col-7 popconval'>
+  {item.value.length === 0 ? 
+    "data not available" : 
+    item.value === true ? 
+      "active" : 
+      item.value === false ? 
+        "inactive" : 
+        item.value
+  }
+</div>
 
                                         </div>
                                     ))}

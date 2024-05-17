@@ -137,7 +137,7 @@ import { logoutUser } from '../Redux/actions/authActions';
 import { Link, useNavigate } from 'react-router-dom';
 import ChangePassword from '../component/Modale/ChangePassword';
 import { IoIosRefresh } from "react-icons/io";
-import UpdateCompanyModal from '../component/Modale/UpdateCompanyModal';
+// import UpdateCompanyModal from '../component/Modale/UpdateCompanyModal';
 import UpdateAdminModal from '../component/Modale/UpdateAdminModal';
 
 function Profile(props) {
@@ -180,9 +180,9 @@ function Profile(props) {
       {auth?.admin && (
         <UpdateAdminModal isModalOpen={isModalOpen} data={userData} closeModal={closeModal} />
       )}
-      {auth?.company && (
+      {/* {auth?.company && (
         <UpdateCompanyModal isModalOpen={isModalOpen} data={userData} closeModal={closeModal} />
-      )}
+      )} */}
 
 
       {/* <UpdateProfile isModalOpen={isModalOpen} closeModal={closeModal} />

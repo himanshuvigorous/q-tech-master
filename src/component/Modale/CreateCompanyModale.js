@@ -55,34 +55,34 @@ const CreateCompanyModale = ({ isModalOpen, closeModal }) => {
   //   "city": city,
   //   "state": state
   // }
-  const [companyFormData2, setCompanyFormData2] = useState({
+  // const [companyFormData2, setCompanyFormData2] = useState({
   
-      "contactName": "shubham1",
-      "username": "vigorous1234567",
-      "operatorId" : "vigorousjaipur1654654654641",
-      "reference" : "localhost:5001",
-      "callbackUrl" : "http://vigoroustesdgt1111",
-      "companyName": "vigorousdgTest1111",
-      "mailto:email":"vigoroustest11xg11@gmail.com",
-      "token": localStorage.getItem("token"),
-      "password": "1234561",
-      "status": 1,
-      "isDiamond": true,  
-      "joiningDate": "12/05/2024",
-      "companyShare": 10,
-      "totalSecurity": 300000,
-      "isRent": false,
-      "remark": "reamk",
-      "companyAddress": "jaipur",
-      "state": "Rajasthan",
-      "city": "jaipur",
-      "domain": "einfotech.in",
-      "stack":{
-          "minBet": 5,
-          "maxBet": 25000
-      }
+  //     "contactName": "shubham1",
+  //     "username": "vigorous1234567",
+  //     "operatorId" : "vigorousjaipur1654654654641",
+  //     "reference" : "localhost:5001",
+  //     "callbackUrl" : "http://vigoroustesdgt1111",
+  //     "companyName": "vigorousdgTest1111",
+  //     "mailto:email":"vigoroustest11xg11@gmail.com",
+  //     "token": localStorage.getItem("token"),
+  //     "password": "1234561",
+  //     "status": 1,
+  //     "isDiamond": true,  
+  //     "joiningDate": "12/05/2024",
+  //     "companyShare": 10,
+  //     "totalSecurity": 300000,
+  //     "isRent": false,
+  //     "remark": "reamk",
+  //     "companyAddress": "jaipur",
+  //     "state": "Rajasthan",
+  //     "city": "jaipur",
+  //     "domain": "einfotech.in",
+  //     "stack":{
+  //         "minBet": 5,
+  //         "maxBet": 25000
+  //     }
   
-  });
+  // });
 // console.log()
 function emptyAllfeields(){
   setContactName("");
@@ -136,10 +136,10 @@ const companyFormData ={
   // console.log("companyFormData",companyFormData);
   const createCompany = async (e) => {
     e.preventDefault();
-    console.log("companyFormData",companyFormData);
+    // console.log("companyFormData",companyFormData);
     try {
       const response = await httpPost('admin/createNewCompany', companyFormData);
-      console.log("response111",response);
+
       if (response) {
         toast.success(response.message);
         closeModal();
@@ -172,6 +172,7 @@ const companyFormData ={
             <div className="modal-content">
               <div className="modal-header">
                 <MdArrowBack onClick={() => closeModal()} size={20} />
+                hhhhh
                 <h5 className="modal-title">Create New Company</h5>
               </div>
               <div className="modal-body">

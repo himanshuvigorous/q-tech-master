@@ -5,8 +5,8 @@ import "./Loading.css"
 function Loading() {
     return (
         <div className='main'>
-<div class="container">
-  <div class="loadingspinner">
+<div className="container">
+  <div className="loadingspinner">
     <div id="square1"></div>
     <div id="square2"></div>
     <div id="square3"></div>

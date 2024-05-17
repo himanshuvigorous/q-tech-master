@@ -15,7 +15,7 @@ const axiosConfig = {
         ...authHeader()
     }
 };
-console.log("axiosConfig",axiosConfig);
+
 const handleResponse = (result, isNotify) => {
     if (isNotify && result.message) {
         // Handle notifications here
@@ -34,7 +34,7 @@ const makeHttpRequest = async (method, url, params, isNotify) => {
             data: { ...params },
             ...axiosConfig
         });
-        console.log("result",result);
+
         return handleResponse(result, isNotify);
     } catch (error) {
         // alert(error.response?.data?.message);

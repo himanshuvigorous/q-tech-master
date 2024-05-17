@@ -6,7 +6,6 @@ import Header from '../Header/Header';
 import './Layout.css';
 import '../../App.css';
 import Company from '../../pages/Company';
-import Pm from '../../pages/Pm';
 import Leads from '../../pages/Leads';
 import { useDispatch, useSelector } from 'react-redux';
 import Dashboard from '../Dashboard/Dashboard';
@@ -21,6 +20,7 @@ import AccountStatement from '../../pages/AccountStatement';
 import Report from '../../pages/Report';
 import Payment from '../../pages/Payment';
 import CasinoPlayer from '../../pages/CasinoPlayer';
+import CasinoList from '../../pages/CasinoList';
 
 
 function Layout() {
@@ -63,46 +63,13 @@ function Layout() {
             <>
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/company' element={<Company  />} />
-              <Route path='/pm' element={<Pm  />} />
+              <Route path='/casinolist' element={<CasinoList  />} />
               <Route path='/tl' element={<Tl  />} />
               <Route path='/leads' element={<Leads  />} />
               <Route path='/profile' element={<Profile  />} />
               <Route path='/project' element={<Project  />} />
               <Route path='/employee' element={<Employee  />} />
               <Route path='/casinoPlayer' element={<CasinoPlayer />} />
-            </>
-          )}
-          {auth?.user && auth.user.position === 2 && (
-            <>
-              <Route path='/dashboard' element={<Dashboard  />} />
-              <Route path='/pm' element={<Pm  />} />
-              <Route path='/tl' element={<Tl  />} />
-              <Route path='/leads' element={<Leads  />} />
-              <Route path='/profile' element={<Profile  />} />
-              <Route path='/project' element={<Project  />} />
-              <Route path='/employee' element={<Employee  />} />
-              <Route path='/account' element={<Account  />} />
-              <Route path='/accountstatement' element={<AccountStatement  />} />
-              <Route path='/report' element={<Report  />} />
-              <Route path='/payment' element={<Payment  />} />
-
-            </>
-          )}
-          {auth?.user && auth.user.position === 3 && (
-            <>
-              <Route path='/dashboard' element={<Dashboard  />} />
-              <Route path='/tl' element={<Tl  />} />
-              <Route path='/leads' element={<Leads  />} />
-              <Route path='/profile' element={<Profile  />} />
-
-            </>
-          )}
-          {auth?.user && auth.user.position === 4 && (
-            <>
-              <Route path='/dashboard' element={<Dashboard  />} />
-              <Route path='/tl' element={<Tl  />} />
-              <Route path='/leads' element={<Leads  />} />
-              <Route path='/profile' element={<Profile  />} />
             </>
           )}
         </Routes>

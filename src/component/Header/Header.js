@@ -9,6 +9,7 @@ import UserImg from '../../Images/user_img.jpg';
 import { IoMdMenu } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
+import { CgProfile } from 'react-icons/cg';
 
 function Header(props) {
     const navigate = useNavigate();
@@ -44,22 +45,24 @@ function Header(props) {
                     </div>
                     <div className="col-md-6 col-10 d-flex justify-content-end align-items-center gap-3">
 
-                        <div className="ml-2 bell-icon">
+                        {/* <div className="ml-2 bell-icon">
                             <FaBell />
-                        </div>
+                        </div> */}
                         <div className="rounded-circle overflow-hidden">
                             <Dropdown>
                                 <Dropdown.Toggle variant="" className='dropBTn d-flex align-items-center' id="dropdown-basic">
-                                    <img src={UserImg} alt="Profile" className="img-fluid profile rounded-circle" />
+                                    {/* <img src={UserImg} alt="Profile" className="img-fluid profile rounded-circle" /> */}
                                     {/* <div className='userDet pr-0'>
                                         <h5 className="mat-subtitle-2 f-w-600">{auth?.user.name}</h5>
                                         <span className='f-s-12'>{auth?.user.userType}</span>
                                     </div> */}
+                                    <CgProfile size={30} />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className='headerMenuModal'>
                                     <Dropdown.Item >
                                         <div className='headMDflex'>
-                                            <img src={UserImg} alt="Profile" className="img-fluid profile rounded-circle" />
+                                            {/* <img src={UserImg} alt="Profile" className="img-fluid profile rounded-circle" /> */}
+                                            <CgProfile size={30} />
                                             <div className='headUserDetail'>
                                                 <p>{auth?.user?.name}</p>
                                                 <span>{auth?.user?.email}</span>

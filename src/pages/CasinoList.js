@@ -17,7 +17,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { httpGet, httpPost } from '../Helper/Helper';
 import ShowFullDataModal2 from '../component/Modale/ShowFullDataModale2';
 
-function Company() {
+function CasinoList() {
   // const usersData = useSelector((state) => state.users.users);
   // const loading = useSelector((state) => state.users.loading);
   const [loading,setLaoding] = useState(false);
@@ -95,28 +95,24 @@ console.log(resData);
     navigate(`app/tl`);
   };
 
-  const linkdata = (url) =>{
-    navigate(`/app/casinoPlayer/${url}`)
-  }
+  // const linkdata = (url) =>{
+  //   navigate(`/app/casinoPlayer/${url}`)
+  // }
 
 
 
   return (
     <>
-      {/* <CreateCompanyModale isModalOpen={isModalOpen} closeModal={closeModal} userType={"company"} />
-
-      <UpdateUserModal isEditModalOpen={isEditModalOpen} closeModal={closeModal} userToEdit={userEditData} /> */}
-
       <ShowFullDataModal2 isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} />
-      {/* <ShowFullDataModale isShowUserDataModale={isShowUserDataModale} userData={showalldata} closeModal={closeModal} /> */}
+
       {loading && <Loading />}
 
-      <div className='allPageMainView'>
+     {resData && resData?.data.length > 0 && <div className='allPageMainView'>
         <div className='container-fluid'>
           <div className='tableDataView'>
             <div className='row'>
               <div className='col-lg-12 col-sm-12'>
-                <div className='tableMainBoxView tableDataHeight '  style={{  backgroundColor: "rgb(25, 47, 59)" }}>
+                <div className='tableMainBoxView tableDataHeight '  style={{  backgroundColor: "rgb(25, 47, 59)", paddingBottom:"5px",marginBottom:"10px" }}>
                   <div className='filterView'>
                     <div className='tableHeadC'>
                       <Link to='/app/dashboard' style={{color:"white" }}> <MdArrowBack /></Link>
@@ -204,9 +200,9 @@ console.log(resData);
             </div>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   )
 }
 
-export default Company
+export default CasinoList
