@@ -1,0 +1,110 @@
+.headerMain {
+    background-color: #fafafa;
+    padding: 16px 6px;
+    position: fixed;
+    width: 85%;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+}
+.profile:hover{
+    box-shadow: 0 1px 2px 0px #000;
+}
+
+.bell-icon {
+    font-size: 20px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    z-index: 9999 !important;
+    background: #fff !important;
+    box-shadow: 0 3px 5px 4px #96beee26;
+    transform: translate(-18px, 71px) !important;
+    width: 250px;
+    padding-top: 0px;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.headerMenuModal {
+    position: fixed !important;
+}
+
+.dropBTn.show {
+    border-color: #f8f9fa !important;
+    color: #000;
+}
+
+.dropBTn:active {
+    border-color: #f8f9fa !important;
+    color: #000;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .headerMain {
+        width: 100% !important;
+
+    }
+
+    .MMBTN {
+        position: relative;
+        z-index: 999;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .bell-icon {
+        /* display: none; */
+    }
+
+    .gap-3 {
+        gap: 0rem !important;
+    }
+
+    .headerMain {
+        background-color: #f8f9fa;
+        padding: 5px 6px;
+        position: fixed;
+        width: 85%;
+    }
+}
+
+.pr-0 {
+    padding-right: 0px;
+}
+
+.headHeading h3 {
+    font-size: 18px;
+    color: #1267c3;
+    margin-bottom: 0px;
+    font-weight: 600;
+    line-height: 0;
+    margin-left: 10px;
+}
+.headUserDetail{
+    padding: 0 10px;
+}
+.headUserDetail p{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.headUserDetail span{
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+.headMDflex{
+    display: flex;
+    padding: 6px 0;
+}

@@ -1,0 +1,189 @@
+.sideMain {
+    background: #f9fafc;
+    padding: 10px 0px;
+    height: 100vh;
+    position: fixed;
+    width: 15%;
+    /* overflow-y: auto; */
+    /* box-shadow:0 0px 15px 1px #20202026; */
+
+}
+
+.logo {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    margin: -31px auto;
+    margin-right: 50px;
+}
+
+/* .acOpen {
+    background: #e8effc;
+    padding: 10px 15px;
+    text-align: center;
+} */
+
+.acOpen {
+    background: #e8effc;
+    padding: 15px 20px;
+    margin-right: 55px;
+    text-align: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.acOpen span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* .sideMenu ul {
+    padding: 10px 15px;
+} */
+
+.menuBtn {
+    background: #f9fafc;
+    border-radius: 7px;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 7px;
+    padding: 0px 0px;
+    ;
+}
+
+.menuBtn:hover {
+    background: #e6efff;
+    border-radius: 7px;
+    width: 100%;
+    color: #1640d6;
+    list-style: none;
+    padding: 0px 0px;
+    transition: ease-in-out 0.3s;
+}
+.sideMenu ul li {
+    list-style: none;
+}
+.sideMenu ul li a {
+    background: #f9fafc;
+    color: rgba(0, 0, 0, 0.88);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;    
+    width: 250px;
+    display: block;
+    list-style: none;
+    padding: 8px 30px;
+}
+.sideMenu ul li a:hover {
+    background: #e6efff;
+    border-radius: 7px;
+    width: 250px;
+    display: block;
+    color: #1640d6;
+    list-style: none;
+    padding: 8px 30px;
+    transition: ease-in-out 0.3s;
+}
+
+/* .sideMenu ul li a:hover {
+    color: #1640d6;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+}
+
+.sideMenu ul li a {
+    color: rgba(0, 0, 0, 0.88);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+} */
+
+.menuIcon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+
+.menuMicon {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .sideMain {
+        display: none;
+        width: 250px;
+    }
+
+    .block {
+        display: block;
+        /* show when 'block' className is present */
+    }
+
+    .hidden {
+        display: none;
+        /* hide when 'hidden' className is present */
+    }
+
+    .menuMicon {
+        text-align: right;
+        padding: 4px 8px 0px 0px;
+    }
+    .sideWidth{
+        width: 100vw;
+        background-color: rgba(0,0,0,0.6);
+        height: 100vh;
+    }
+}
+
+.p-24 {
+    padding: 24px !important;
+  }
+  .bg-light-accent {
+    background-color: #e8f7ff !important;
+    padding: 10px;
+  }
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  .mat-subtitle-2 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
+    letter-spacing: normal;
+    margin: 0;
+    color: #2a3547;
+  }
+  .f-s-12 {
+    font-size: 13px !important;
+  }
+  .userDet{
+    padding: 0 15px;
+    text-align: left;
+  }
+  .profile-bar{
+    padding: 0 24px;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    display: none;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+  .menuHScroll{
+    margin-top: 1rem;
+    padding-left: 0rem !important;
+  }
+
+  .subDropdown{
+    margin-top: -2px !important;
+    margin-left: 12px;
+  }

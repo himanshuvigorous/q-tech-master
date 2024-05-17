@@ -1,0 +1,30 @@
+.mainView {
+    display: flex;
+    width: 100%;
+}
+
+.leftView {
+    width: 15%;
+    /* position: absolute; */
+}
+
+.rightView {
+    width: 85%;
+    /* padding-left: 5%; */
+    /* background-color: #edf2fb; */
+    background-color: #f8f9fa
+}
+
+@media (max-width: 1300px) {
+    .rightView {
+        width: 100% !important;
+    }
+
+    .leftView {
+        width: 0;
+        z-index: 999;
+    }
+    .allPageMainView {
+        padding-left: 0px;
+      }
+}

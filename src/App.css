@@ -1,0 +1,457 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Home Page*/
+
+.homeMainView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.leftSection {
+  background-color: #f9fafc;
+  height: 100vh;
+  width: 50%;
+}
+
+.rightSection {
+  background-color: #fff;
+  height: 100vh;
+  width: 50%;
+}
+
+.dataView {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 12rem;
+}
+
+.homeHead {
+  padding: 50px 0;
+}
+
+.homeHead h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #363a41 !important;
+}
+
+.list-checked {
+  padding-left: 0px;
+}
+
+.list-checked-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.list-checked-item p {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.bottomForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 20px
+}
+
+.forgotTxt p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.registeT p a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 919px) {
+  .leftSection {
+    display: none;
+  }
+
+  .rightSection {
+    width: 100% !important;
+  }
+
+  .dataView {
+    max-width: 100%;
+    padding: 4rem 25px;
+  }
+
+  /* .filterView {
+    display: block !important;
+  } */
+
+  .filterBoxView {
+    margin: 15px 0;
+  }
+ 
+  .logoImg {
+    display: block !important;
+  }
+
+}
+
+/*Profile css*/
+.userDetailsRight ul {
+  padding-left: 0rem;
+}
+
+.userDetailsRight ul li {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  list-style: none;
+  line-height: 30px;
+}
+
+.userDetailsRight ul li span {
+  color: #616161;
+}
+
+.userDetailsLeft img {
+  width: 40%;
+}
+
+.mainBtn {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.editBtn {
+  width: 78px !important;
+  padding: 5px 0;
+}
+
+.logoutbtn {
+  width: 94px !important;
+  padding: 5px 0;
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  color: #000 !important;
+}
+.logoutbtn:hover {
+  width: 94px !important;
+  padding: 5px 0;
+  background: #fff !important;
+  border: 1px solid #3b65e3 !important;
+  color: #3b65e3 !important;
+}
+
+.updPassBtn {
+  width: 170px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  color: #000 !important;
+}
+.updPassBtn:hover {
+  width: 170px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #3b65e3 !important;
+  color: #3b65e3 !important;
+}
+
+.logoImg {
+  display: none;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tableMenuModal {
+  position: absolute !important;
+  top: -43px !important;
+  right: 0;
+  width: 60px !important;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.tableDataHeight {
+  padding-bottom: 8rem !important;
+}
+
+.tableMEnuTxt {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  line-height: 25px;
+  padding: 6px 35px;
+}
+
+.dotTxt p {
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.mr-3 {
+  margin-right: 10px;
+}
+
+.dotTxt::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  display: none;
+}
+
+.dotTView {
+  margin-top: -11px;
+}
+
+.dotTxt {
+  line-height: 0;
+}
+
+.profileVIew {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.profileVIew li {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.profileVIew li span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: -38px;
+}
+
+.width30 {
+  width: 35%;
+}
+
+@media (max-width:767px) {
+  .menuHScroll{
+    /* overflow-y: auto;
+    min-height: 450px;
+    height: 450px;
+    max-height: 650px; */
+  }  
+  .tableDataView .row .col-sm-12{
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+  .tableMainBoxView {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 6px;
+    width: 100% !important;
+    min-height: 100px;
+   }
+   .inputMobileWidth {
+    position: inherit !important;
+    /* display: block !important; */
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 60% !important;
+  }
+  .allPageMainView {
+    margin-top: 5rem;
+    padding-left:0px !important;
+  }
+}
+
+.dropdown-item a{
+  color: #000;
+  text-decoration: none;
+}
+
+thead tr th{
+  background-color: #fafafa !important;
+  padding: 12px 6px !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.filterView{
+  margin-bottom: 20px;
+}
+
+/*Update Password Modal css*/
+
+.modal-Profile{
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.modal.show .modal-Profile {
+  transform: none;
+}
+.modal.fade .modal-Profile {
+  transition: transform .3s ease-out;
+  transform: translate(0,-50px);
+}
+.modal-PassUpcontent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+.padd4{
+  padding: 4px 0 !important;
+}
+.refreshBTn02 {
+  width: 110px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  color: #000 !important;
+}
+.refreshBTn02:hover {
+  width: 110px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #3b65e3 !important;
+  color: #3b65e3 !important;
+}
+.inputMobileWidth{
+  /* display: block !important; */
+  /* padding: 0 7px 14px; */
+}
+.inputMobileWidth .form-control{
+  border-radius: 10px !important;
+  font-size: 14px;
+  position: inherit !important;
+}
+.selectWidth{
+  width: 100% !important;
+}
+.filterInput{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+/* .filterBoxView02{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+} */
+
+@media (max-width: 540px) {
+  .filterInput{
+    display: block;
+  }
+  .innerFIlterBtn{
+    width: 59% !important;
+  }
+  .filterView {
+    display: block !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.innerFIlterBox{
+  display: flex;
+  align-items: center;
+  width: 100%;  
+}
+.innerFIlterBtn{
+  color: #fff;
+  background: #1640d6;
+  box-shadow: 0 2px 0 rgba(5, 95, 255, 0.1);
+  margin-left: 10px;
+  transition: ease-in-out 0.3s;
+  width: 100%;
+}
+.innerFIlterBtn:hover {
+  color: #fff;
+  background: #3b65e3;
+  transition: ease-in-out 0.3s;
+}
+.nodataView{
+  padding: 4rem 0;
+}
+.card{
+  position: inherit;
+}
+.react-datepicker__input-container{
+  position: inherit !important;
+}
+/* .dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center{
+  position: inherit !important;
+} */
+.innerFIlterBox .InnerinputPadd{
+  padding: 0 7px 14px;
+}
+.InnerinputPadd .form-control {
+  border-radius: 10px !important;
+  font-size: 14px;
+  position: inherit !important;
+}

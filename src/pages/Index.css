@@ -1,0 +1,149 @@
+.tableHeadC {
+    display: flex;
+    align-items: center;
+}
+
+.tableHeadC h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1267c3;
+    margin-left: 10px;
+    margin-bottom: 0rem;
+}
+
+.filterView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 5px;
+    border-radius: 10px;
+}
+
+.filterBoxView {
+    display: flex;
+    align-items: center;
+}
+
+.mainBtn {
+    color: #fff;
+    background: #1640d6;
+    box-shadow: 0 2px 0 rgba(5, 95, 255, 0.1);
+    width: 240px;
+    margin-left: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.mainBtn:hover {
+    color: #fff;
+    background: #3b65e3;
+    transition: ease-in-out 0.3s;
+}
+
+
+/*Modal css*/
+.modalMainView {
+    position: absolute;
+    z-index: 999;
+    background: rgb(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalBoxView {
+    background-color: #fff;
+    padding: 10px;
+    height: 100vh;
+    width: 320px;
+    position: absolute;
+    right: 0;
+    padding: 20px 15px;
+}
+
+.from-control {
+    margin-bottom: 15px;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+.refreshBTn {
+  width: 224px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  color: #000 !important;
+}
+.refreshBTn:hover {
+  width: 224px !important;
+  padding: 7px 0;
+  background: #fff !important;
+  border: 1px solid #3b65e3 !important;
+  color: #3b65e3 !important;
+}
+@media (max-width:767px) {
+    .refreshBTn {
+        width: 202px !important;
+        padding: 7px 0;
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        color: #000 !important;
+      }
+      .mainBtn {
+        color: #fff;
+        background: #1640d6;
+        box-shadow: 0 2px 0 rgba(5, 95, 255, 0.1);
+        width: 292px;
+        margin-left: 5px;
+        transition: ease-in-out 0.3s;
+      }
+      .filterView {
+        display: block !important;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+}
+.nodataView{
+    padding: 4rem 0 !important;
+    text-align: center;
+    border-bottom: none;
+}
+.w-full{
+    width: 100% !important;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+.card-header span{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card-header .BalanceValue{
+    font-size: 16px;
+    font-weight: 700;
+    color: green;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.tableData{
+    width: 300px;
+}
+
+.tableDataView{
+    word-break: break-all;
+}
+.linkstyle{
+    text-decoration: underline;
+    color: #1640d6;
+    cursor: pointer;
+}
